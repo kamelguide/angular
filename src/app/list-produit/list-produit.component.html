@@ -1,0 +1,23 @@
+
+    <table class="table table-striped" *>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Image</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let p of produit">
+                <td>{{p.id}}</td>
+                <td>{{p.nom}}</td>
+                <td>{{p.prix}}</td>
+                <td>{{p.quantite}}</td>
+                <td><img    [src]=p.urlImage width="50px" height="50px"/></td>
+            </tr>
+           
+            <!-- Add more rows here as needed -->
+        </tbody>
+    </table>
